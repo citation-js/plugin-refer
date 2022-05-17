@@ -40,7 +40,6 @@
     "parser": "@babel/eslint-parser"
   },
   "dependencies": {
-    "@citation-js/date": "^0.5.0",
     "@citation-js/name": "^0.4.2"
   },
   "devDependencies": {
@@ -49,8 +48,8 @@
     "@babel/eslint-parser": "^7.14.3",
     "@babel/preset-env": "^7.12.10",
     "@babel/register": "^7.12.10",
-    "babel-plugin-istanbul": "^5.1.0",
     "@citation-js/core": "^0.5.1",
+    "babel-plugin-istanbul": "^5.1.0",
     "conventional-changelog-cli": "^2.1.0",
     "mocha": "^8.4.0",
     "nyc": "^15.1.0",
