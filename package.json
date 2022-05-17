@@ -1,5 +1,5 @@
 {
-  "name": "plugin-refer",
+  "name": "@citation-js/plugin-refer",
   "version": "0.0.0",
   "description": "Citation.js plugin for the refer file format",
   "main": "src/index.js",
