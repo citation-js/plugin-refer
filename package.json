@@ -1,0 +1,62 @@
+{
+  "name": "plugin-refer",
+  "version": "0.0.0",
+  "description": "Citation.js plugin for the refer file format",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha -r @babel/register test/suite.js",
+    "babel": "babel src -d lib --copy-files",
+    "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "coverage": "NODE_ENV=coverage nyc npm test",
+    "report": "nyc report --reporter=lcov > coverage.lcov",
+    "preversion": "npm run lint && npm run test",
+    "version": "npm run changelog",
+    "postversion": "npm run babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citation-js/plugin-refer.git"
+  },
+  "keywords": [
+    "Citation.js",
+    "citation",
+    "reference",
+    "refer"
+  ],
+  "author": "Lars Willighagen (https://larsgw.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/citation-js/plugin-refer/issues"
+  },
+  "homepage": "https://github.com/citation-js/plugin-refer#readme",
+  "engines": {
+    "node": ">=14"
+  },
+  "files": [
+    "/lib"
+  ],
+  "standard": {
+    "parser": "@babel/eslint-parser"
+  },
+  "dependencies": {
+    "@citation-js/date": "^0.5.0",
+    "@citation-js/name": "^0.4.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "babel-plugin-istanbul": "^5.1.0",
+    "@citation-js/core": "^0.5.1",
+    "conventional-changelog-cli": "^2.1.0",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "standard": "^16.0.3"
+  },
+  "peerDependencies": {
+    "@citation-js/core": "^0.5.1"
+  }
+}
