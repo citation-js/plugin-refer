@@ -2,7 +2,7 @@
   "name": "@citation-js/plugin-refer",
   "version": "0.0.0",
   "description": "Citation.js plugin for the refer file format",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha -r @babel/register test/suite.js",
     "babel": "babel src -d lib --copy-files",
