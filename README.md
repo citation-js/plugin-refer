@@ -3,6 +3,7 @@
 This plugin adds support for the reference file format used by [refer](https://en.wikipedia.org/wiki/Refer_(software)).
 
 [![NPM version](https://img.shields.io/npm/v/@citation-js/plugin-refer.svg)](https://npmjs.org/package/@citation-js/plugin-refer)
+[![Codecov](https://img.shields.io/codecov/c/gh/citation-js/plugin-refer)](https://app.codecov.io/gh/citation-js/plugin-refer)
 [![NPM total downloads](https://img.shields.io/npm/dt/@citation-js/plugin-refer.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-refer?minimal=true)
 ![License](https://img.shields.io/npm/l/@citation-js/plugin-refer.svg)
 
