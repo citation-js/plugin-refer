@@ -87,7 +87,7 @@ const apiTests = [
 `,
     data: [{
       author: [{ literal: 'National Aeronautics and Space Administration' }],
-      type: 'book'
+      type: 'document'
     }]
   },
   {
@@ -97,7 +97,7 @@ const apiTests = [
 `,
     data: [{
       editor: [{ family: 'Caesar', given: 'Julius' }],
-      type: 'book'
+      type: 'document'
     }]
   },
   {
@@ -111,7 +111,7 @@ const apiTests = [
         { family: 'Caesar', given: 'Julius' },
         { family: 'Homerus' }
       ],
-      type: 'book'
+      type: 'document'
     }]
   },
   {
@@ -121,7 +121,7 @@ const apiTests = [
 `,
     data: [{
       title: 'Sample Text Through the Ages',
-      type: 'book'
+      type: 'document'
     }],
     output: `%D unknown
 %T Sample Text Through the Ages
@@ -133,7 +133,7 @@ const apiTests = [
 `,
     data: [{
       issued: { 'date-parts': [[2022]] },
-      type: 'book'
+      type: 'document'
     }],
     output: `%D 2022
 `
@@ -144,14 +144,14 @@ const apiTests = [
 `,
     data: [{
       issued: { 'date-parts': [[2022, 3]] },
-      type: 'book'
+      type: 'document'
     }]
   },
   {
     name: 'unknown date',
     input: `%D unknown
 `,
-    data: [{ type: 'book' }]
+    data: [{ type: 'document' }]
   },
   {
     name: 'forthcoming publication',
@@ -159,7 +159,7 @@ const apiTests = [
 `,
     data: [{
       status: 'forthcoming',
-      type: 'book'
+      type: 'document'
     }]
   },
   {
@@ -169,7 +169,7 @@ const apiTests = [
 `,
     data: [{
       author: [{ family: 'Caesar', given: 'Julius', suffix: 'Jr.' }],
-      type: 'book'
+      type: 'document'
     }]
   }
 ]
