@@ -7,7 +7,7 @@ const TYPES = ['other', 'journal-article', 'book', 'article-in-book', 'tech-repo
 
 const TYPE_MAPPING = {
   toTarget: {
-    other: 'book',
+    other: 'document',
     'journal-article': 'article-journal',
     book: 'book',
     'article-in-book': 'chapter',
