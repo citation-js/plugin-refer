@@ -1,3 +1,11 @@
+# [0.3.0](https://github.com/citation-js/plugin-refer/compare/v0.2.0...v0.3.0) (2026-10-05)
+
+* chore!: update to Node.js v22 ([63ff1c3](https://github.com/citation-js/plugin-refer/commit/63ff1c3ccbc870e3df4727fb627f46fee01906dc))
+
+### BREAKING CHANGES
+
+* drop support for Node.js 14, 16, 18, 20
+
 # [0.2.0](https://github.com/citation-js/plugin-refer/compare/v0.1.0...v0.2.0) (2022-06-02)
 
 
