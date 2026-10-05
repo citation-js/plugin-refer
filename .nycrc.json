@@ -1,6 +1,7 @@
 {
-  "require": [
-    "@babel/register"
+  "all": true,
+  "include": [
+    "src/**/*.js"
   ],
   "sourceMap": false,
   "instrument": false
